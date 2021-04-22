@@ -1,0 +1,426 @@
+@charset "utf-8";
+
+
+/*웹,모바일 안보임*/
+.mobile_pro_txt,.gnbBg,.mPanel,.mClose,.mVerImg {display: none;}
+.mPage {display: none !important;}
+.mGnbTit {display: none !important;}
+
+/*768px 아이패드 사이즈 까지*/
+@media screen and (max-width:768px) {
+
+    /*모바일에서 안보임*/
+    .dia,.pro_txt,.gnb .gnbTit,.setionTxt,.mobile,
+    .inImg03,.gentleImg03,.gentleImg04,.policeImg03,.benzImg03 {display: none;}
+    
+    .gnb,.panelMenu,.panel {display: none !important;}
+    /*모바일세팅*/
+    body {min-width: auto;}
+    
+    #fp-nav.fp-right {
+        right: 6px;
+/*        z-index: -1;*/
+    }
+    
+    #fp-nav ul li,
+    .fp-slidesNav ul li {height: 8px;}
+
+    .mPage {
+        display: block !important;
+    }
+    .mPage span{
+        margin-right: 10px;
+    }
+    /*header*/
+    
+    #header {padding: none;}
+    .mClose {
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    }
+    .mPanel {
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+    .mPanel span {margin: 5px 0;}
+    .mPanel a::before,.mPanel span,.mPanel a::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #333;
+        text-indent: -9999px;
+    }
+    .gnbBg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: rgba(255,255,255);
+        position: fixed;
+        left: 0;
+        transition: width 0.3s;
+    }
+    .mGnb {
+        font-size: 16px;
+        position: absolute;
+        left: 60px;
+        top: 50px;
+        height: auto;
+        font-family: 'PlayfairDisplay';
+        font-weight: 400;
+        font-size: 22px;
+    }
+    .mGnb li {
+        float: none;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+    .mGnbTit {
+        text-align: center;
+        font-size: 14px;
+        position: fixed;
+        right: 30px;
+        top: 23px;
+        font-family: 'PlayfairDisplay';
+        font-weight: 400;
+        z-index: -1;
+        display: block !important;
+    }
+    
+    /*main*/
+    
+    .main {
+        height: auto;
+        width: 100%:
+    }
+    .main .year {
+        width: 80px;
+        height: 40px;
+        line-height: 35px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .main h1 {font-size: 35px;}
+    
+    /*profile*/
+    
+    .profile {
+        position: relative;
+        overflow: hidden;
+        font-family: 'PlayfairDisplay';
+        font-size: 24px;
+    }
+    .mobile_pro_txt {
+        display: block;
+        text-align: center;
+        margin: 20px 0 30px 0;
+        font-size: 30px;
+    }
+    .pro_txt {
+        position: static;
+        font-size: 40px;
+        text-align: center;
+    }
+    .profile p {
+        font-size: 150px;
+        font-weight: 700;
+    }
+    .L {
+        left: 20px;
+        top: 150px;
+        animation: LEE 1.4s infinite ease-in-out alternate;
+        opacity: 0.2;
+    }
+    .E {
+        left: 150px;
+        bottom: -90px;
+        animation: YEON 1.4s infinite ease-in-out alternate;
+        opacity: 0.3;
+    }
+    .E_1 {
+        right: 40px;
+        top: -100px;
+        animation: JAE 1.4s infinite ease-in-out alternate;
+        opacity: 0.3;
+    }
+    .designer {
+        position: static;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .designer img {width: 100%;}
+    .pro_Info {
+        position: static;
+        text-align: center;
+    }
+    .pro_Info ul {
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .pro_Info ul:first-child {margin-bottom: 40px;}
+    .pro_Info ul li {
+        font-family: 'NotoSans';
+        font-weight: 300;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .pro_Info ul li:first-child {margin-top: 10px;}
+    
+    /*jomalone*/
+    
+    .jomalone {
+        font-size: 24px;
+        position: relative;
+        overflow: hidden;
+        height: auto;
+/*        background: rgba(248,243,234,0.6);*/
+    }
+
+    .mVerImg {
+        display: block;
+        width: 600px;
+        margin-top: 50px;
+        text-align: left;
+        margin-left: 400px;
+    }
+    .mVerImg img{
+        width: 100%;
+        
+    }
+    .mVerImg .mPage {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+    }
+    .mVerImg .mPage p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .mVerImg .mPage span {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    /*inspiration*/
+    
+    .inspiration {
+        text-align: left;
+    }
+  
+    .inspiration .inBox img {
+        transform: rotate(20deg);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        width: 300px;
+    }
+
+    .inBox {
+        position: absolute;
+        top: 600px;
+        left: 600px;
+    }
+
+    .inImg01 {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        z-index: 1;
+    }
+
+    .inImg02 {
+        position: absolute;
+        top: 360px;
+        left: 80px;
+    }
+    
+    .inspiration .mPage {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+    }
+    .inspiration .mPage p {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .inspiration .mPage span {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    /*gentlemonster*/
+    
+    .gentlemonster {text-align: left;}
+  
+    .gentlemonster .gentleBox img {
+        transform: rotate(20deg);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        width: 300px;
+    }
+    .gentleBox {
+        position: absolute;
+        top: 600px;
+        left: 600px;
+    }
+    .gentleImg01 {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        z-index: 1;
+    }
+    .gentleImg02 {
+        position: absolute;
+        top: 360px;
+        left: 80px;
+    }
+    .gentlemonster .mPage {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+    }
+    .gentlemonster .mPage p {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .gentlemonster .mPage span {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    /*gmz*/
+    
+    .gmz {text-align: left;}
+  
+    .gmz .gmzBox img {
+        transform: rotate(20deg);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        width: 300px;
+    }
+    .gmzBox {
+        position: absolute;
+        top: 600px;
+        left: 600px;
+    }
+    .gmzImg01 {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        z-index: 1;
+    }
+    .gmzImg02 {
+        position: absolute;
+        top: 360px;
+        left: 80px;
+    }
+    
+    .gmz .mPage {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+    }
+    .gmz .mPage p {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .gmz .mPage span {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    /*police*/
+    
+    .police {text-align: left;}
+  
+    .police .policeBox img {
+        transform: rotate(20deg);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        width: 300px;
+    }
+    .policeBox {
+        position: absolute;
+        top: 600px;
+        left: 600px;
+    }
+    .policeImg01 {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        z-index: 1;
+    }
+    .policeImg02 {
+        position: absolute;
+        top: 360px;
+        left: 80px;
+    }
+    
+    .police .mPage {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+    }
+    .police .mPage p {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .police .mPage span {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    /*police*/
+    
+    .benz {text-align: left;}
+  
+    .benz .benzBox img {
+        transform: rotate(20deg);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        width: 300px;
+    }
+    .benzBox {
+        position: absolute;
+        top: 600px;
+        left: 600px;
+    }
+    .benzImg01 {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        z-index: 1;
+    }
+    .benzImg02 {
+        position: absolute;
+        top: 360px;
+        left: 80px;
+    }
+    
+    .benz .mPage {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+    }
+    .benz .mPage p {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .benz .mPage span {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    /*last*/
+    .last h1{font-size: 40px;}
+    .last p{
+        font-size: 18px;
+        margin-top: 20px;
+        font-weight: 500;
+    }
+}
