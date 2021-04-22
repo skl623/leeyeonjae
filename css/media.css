@@ -254,7 +254,7 @@
     }
     
     /*gentlemonster*/
-    .gentlemonster .mPage {z-index: 1;}
+    
     .gentlemonster {text-align: left;}
   
     .gentlemonster .gentleBox img {
@@ -283,6 +283,7 @@
         bottom: 30px;
         left: 30px;
     }
+    .gentlemonster .mPage {z-index: 2;}
     .gentlemonster .mPage p {
         font-size: 20px;
         font-weight: 500;
