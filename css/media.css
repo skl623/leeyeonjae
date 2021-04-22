@@ -254,7 +254,7 @@
     }
     
     /*gentlemonster*/
-    
+    .gentlemonster .mPage {z-index: 1;}
     .gentlemonster {text-align: left;}
   
     .gentlemonster .gentleBox img {
